@@ -58,7 +58,7 @@ if uploaded_file is not None:
     bar.progress(85)
     latest_iteration.text('Post processing')
     result = u2net_post(uploaded_path, output_file)
-    st.image(result, captuion='Result Image', use_column_width=True)
+    st.image(result, caption='Result Image', use_column_width=True)
     st.write("")
     bar.progress(100)
     latest_iteration.text('Done.')
